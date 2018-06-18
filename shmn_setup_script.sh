@@ -7,7 +7,7 @@ CONFIGFOLDER='/root/.shmn'
 COIN_DAEMON='shmnd'
 COIN_CLI='shmn-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='*****************************'
+COIN_TGZ='https://github.com/bumbacoin/test/files/2108877/shmnd-ubu64.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='shmn'
 COIN_PORT=50005 #change after live
@@ -27,7 +27,7 @@ function download_node() {
   wget -q $COIN_TGZ
   compile_error
   tar -xzvf $COIN_ZIP #>/dev/null 2>&1
-  cd bin #verify
+  #cd bin #verify
   chmod +x $COIN_DAEMON $COIN_CLI
   cp $COIN_DAEMON $COIN_CLI $COIN_PATH
   cd ~ #>/dev/null
@@ -121,11 +121,10 @@ masternode=1
 masternodeaddr=$NODEIP:$COIN_PORT
 externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
-addnode=45.76.91.190:7250 #change these
-addnode=45.32.197.20:7250
-addnode=104.238.162.68:7250
-addnode=46.101.50.84:7250
-addnode=69.90.132.120:7250
+addnode=144.202.103.168:50005
+addnode=192.169.7.11:50005
+addnode=84.200.2.253:50005
+addnode=104.200.67.171:50005
 EOF
 }
 
