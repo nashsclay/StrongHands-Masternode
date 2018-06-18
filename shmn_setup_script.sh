@@ -10,8 +10,8 @@ COIN_PATH='/usr/local/bin/'
 COIN_TGZ='https://github.com/bumbacoin/test/files/2108877/shmnd-ubu64.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='shmn'
-COIN_PORT=50005 #change after live
-RPC_PORT=50006 #change after live
+COIN_PORT=50005
+RPC_PORT=50006
 
 NODEIP=$(curl -s4 icanhazip.com)
 
