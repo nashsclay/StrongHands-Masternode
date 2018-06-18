@@ -2,16 +2,16 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='xbi.conf'
-CONFIGFOLDER='/root/.XBI'
-COIN_DAEMON='xbid'
-COIN_CLI='xbi-cli'
+CONFIG_FILE='shmn.conf'
+CONFIGFOLDER='/root/.shmn'
+COIN_DAEMON='shmnd'
+COIN_CLI='shmn-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/nashsclay/XBI/releases/download/v1.0/xbi16.tar.gz'
+COIN_TGZ='*****************************'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='xbi'
-COIN_PORT=7250
-RPC_PORT=7251
+COIN_NAME='shmn'
+COIN_PORT=50005 #change after live
+RPC_PORT=50006 #change after live
 
 NODEIP=$(curl -s4 icanhazip.com)
 
@@ -27,7 +27,7 @@ function download_node() {
   wget -q $COIN_TGZ
   compile_error
   tar -xzvf $COIN_ZIP #>/dev/null 2>&1
-  cd bin
+  cd bin #verify
   chmod +x $COIN_DAEMON $COIN_CLI
   cp $COIN_DAEMON $COIN_CLI $COIN_PATH
   cd ~ #>/dev/null
@@ -121,7 +121,7 @@ masternode=1
 masternodeaddr=$NODEIP:$COIN_PORT
 externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
-addnode=45.76.91.190:7250
+addnode=45.76.91.190:7250 #change these
 addnode=45.32.197.20:7250
 addnode=104.238.162.68:7250
 addnode=46.101.50.84:7250
