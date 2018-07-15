@@ -95,12 +95,12 @@ Will stop your masternode and wil automatically restart
 `shmn-cli stop`
 
 
-This will allow you to edit your masternode's wallet (not your computer's wallet). You can also you this command after the setup to fix if you input the incorrect MN key. Once open and done making changes, press Ctrl + o then Enter to save changes, then Ctrl + x to exit. Then run the legiond stop to restart the MN.
+This will allow you to edit your masternode's wallet (not your computer's wallet). You can also you this command after the setup to fix if you input the incorrect MN key. Once open and done making changes, press Ctrl + o then Enter to save changes, then Ctrl + x to exit. Then run shmn-cli stop to restart the MN.
 
 `nano ~/.shmn/shmn.conf`
 
 
-This is where your digitalmoneybitsd file is saved to
+This is where your StrongHands-Masternode program files is saved to
 
 `cd /usr/local/bin`
 
@@ -110,7 +110,7 @@ Return to root home folder
 `cd ~`
 
 
-This will give you access to the folder of Digital Money Bits files. Notice the period infront of the folder. If your are in the home folder and do **ls** command, it will not show the folder. Period means hidden. Correct command to display this folder in the home folder is **ls -al**
+This will give you access to the folder of StrongHands-Masternode files. Notice the period in front of the folder. If your are in the home folder and do **ls** command, it will not show the folder. Period means hidden. Correct command to display this folder in the home folder is **ls -al**
 
 `cd ~/.shmn`
 
