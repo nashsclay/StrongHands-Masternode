@@ -1,4 +1,4 @@
-# StrongHands Masternode Setup
+# StrongHands-Masternode Setup
 
 If you just want the commands for VPS setup:  
 `wget https://bitbucket.org/nashsclay/dmb/raw/9462d876638c0f597cf676d47cbecd649053cb14/dmb_mn_setup.sh`  
