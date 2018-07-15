@@ -2,8 +2,8 @@
 
 If you just want the commands for VPS setup:  
 `wget https://bitbucket.org/nashsclay/dmb/raw/9462d876638c0f597cf676d47cbecd649053cb14/dmb_mn_setup.sh`  
-`chmod +x dmb_mn_setup.sh`  
-`./dmb_mn_setup.sh`  
+`chmod +x shmn_testmn_setup_script.sh`  
+`./shmn_testmn_setup_script.sh`  
 
 This Digital Money Bits Masternode (MN) script will automatically install almost all of the MN for you. You just need to have your masternode genkey ready. This code comes from Zoldurs many many forks for MN scripts, visit his page here. https://github.com/zoldur  
 
@@ -63,12 +63,12 @@ Please copy and paste the following commands into you connection with your serve
 NOTE: Don't click on the links as that will only show you code. There is no need to do so.
 
 `wget https://bitbucket.org/nashsclay/dmb/raw/9462d876638c0f597cf676d47cbecd649053cb14/dmb_mn_setup.sh`  
-`chmod +x dmb_mn_setup.sh`  
-`./dmb_mn_setup.sh`  
+`chmod +x shmn_testmn_setup_script`  
+`./shmn_testmn_setup_script`  
 
 You will need to copy and paste your masternode private key into putty when it asks. Then press Enter, when this is done, go back to your wallet, unlock your wallet in Settings. Once unlocked, start your masternode. Go to the Masternode tab, and try to start it, if it fails, try the command below in the NOTE. Once started go back to your VPS. type in
 
-`digitalmoneybitsd masternode status`
+`shmn-cli masternode status`
 
 If it says, Masternode Successfully Started then congrats you are done!
 
@@ -82,22 +82,22 @@ This information will be very useful once your MN is setup and ready.
 
 Displays currention information about the masternode
 
-`digitalmoneybitsd getinfo`
+`shmn-cli getinfo`
 
 
 You want to see status: "Masternode successfully started" and that will show your Masternode is ready to go.
 
-`digitalmoneybitsd masternode status`
+`shmn-cli masternode status`
 
 
 Will stop your masternode and wil automatically restart
 
-`digitalmoneybitsd stop`
+`shmn-cli stop`
 
 
 This will allow you to edit your masternode's wallet (not your computer's wallet). You can also you this command after the setup to fix if you input the incorrect MN key. Once open and done making changes, press Ctrl + o then Enter to save changes, then Ctrl + x to exit. Then run the legiond stop to restart the MN.
 
-`nano ~/.dmb/Digitalmoneybits.conf`
+`nano ~/.shmn/shmn.conf`
 
 
 This is where your digitalmoneybitsd file is saved to
@@ -112,7 +112,7 @@ Return to root home folder
 
 This will give you access to the folder of Digital Money Bits files. Notice the period infront of the folder. If your are in the home folder and do **ls** command, it will not show the folder. Period means hidden. Correct command to display this folder in the home folder is **ls -al**
 
-`cd ~/.dmb`
+`cd ~/.shmn`
 
 
 You can alway DM me on discord at nashsclay#6809
