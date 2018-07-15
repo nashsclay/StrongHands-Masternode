@@ -1,9 +1,9 @@
 # StrongHands-Masternode Setup
 
 If you just want the commands for VPS setup:  
-`wget https://bitbucket.org/nashsclay/dmb/raw/9462d876638c0f597cf676d47cbecd649053cb14/dmb_mn_setup.sh`  
-`chmod +x shmn_testmn_setup_script.sh`  
-`./shmn_testmn_setup_script.sh`  
+`wget *coming soon*`  
+`chmod +x *coming soon*`  
+`./*coming soon*`  
 
 This Digital Money Bits Masternode (MN) script will automatically install almost all of the MN for you. You just need to have your masternode genkey ready. This code comes from Zoldurs many many forks for MN scripts, visit his page here. https://github.com/zoldur  
 
@@ -19,7 +19,7 @@ Do note that this script does enable the MN to restart if it is somehow closed. 
 
 ## Setup Wallet on Local Computer
 
-Download the newest wallet for your computer here: https://github.com/DMBcryptocurrency/dmb/releases
+Download the newest wallet for your computer here: *coming soon*
 
 Once downloaded run the wallet and allow it to fully sync (nodes are hardcoded in the wallet)
 Once fully synced, encrypt your wallet. You can do this by selecting Settings --> Encrypt Wallet. Follow the prompts, also keeping your passphrase safe! This will allow you to send coins and make changes. Do NOT loose this passphrase. Once the wallet closes, give it a few minutes to finish encrypting (nothing will show) and restart the wallet.
@@ -62,9 +62,9 @@ Go through setting up the wallet and MN infomration on your computer. Then once 
 Please copy and paste the following commands into you connection with your server. Most common would be to use Putty.
 NOTE: Don't click on the links as that will only show you code. There is no need to do so.
 
-`wget https://bitbucket.org/nashsclay/raw/9462d876638c0f597cf676d47cbecd649053cb14/dmb_mn_setup.sh`  
-`chmod +x shmn_testmn_setup_script`  
-`./shmn_testmn_setup_script`  
+`wget *coming soon*`  
+`chmod +x *coming soon*`  
+`./*coming soon*`  
 
 You will need to copy and paste your masternode private key into putty when it asks. Then press Enter, when this is done, go back to your wallet, unlock your wallet in Settings. Once unlocked, start your masternode. Go to the Masternode tab, and try to start it, if it fails, try the command below in the NOTE. Once started go back to your VPS. type in
 
