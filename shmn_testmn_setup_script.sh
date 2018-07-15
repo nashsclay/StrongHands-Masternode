@@ -7,11 +7,11 @@ CONFIGFOLDER='/root/.shmn'
 COIN_DAEMON='shmnd'
 COIN_CLI='shmn-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='*coming soon*'
+COIN_TGZ='https://github.com/bitcoinbabys/StrongHandsMasterNode/releases/download/v230/shmnd-v230-ubu64.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='shmn'
-COIN_PORT=*coming soon*
-RPC_PORT=*coming soon*
+COIN_PORT=50005
+RPC_PORT=50006
 
 NODEIP=$(curl -s4 icanhazip.com)
 
