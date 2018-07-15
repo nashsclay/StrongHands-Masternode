@@ -32,7 +32,6 @@ function download_node() {
   cp $COIN_DAEMON $COIN_CLI $COIN_PATH
   cd ~ >/dev/null
   rm -rf $TMP_FOLDER >/dev/null 2>&1
-  read -p "Hello"
   clear
 }
 
