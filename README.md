@@ -48,14 +48,14 @@ This will output your output of the transaction. If you do not see anything, the
 You need to copy the long hash and also the 1 or 0 at the end. Place these in the same file as your private key to find easily later. Now that is all done, we need to add the masternode to the masternode.conf file.
 
 Next go to the Masternodes tab. Click the Create button. In the dialogue box type in your MN information.  
-1. Alias = Your MN name (I would do the name you gave your MN deposit address  
+1. Alias = Your MN name (I would do the name you gave your MN deposit address)  
 2. Output Index = 1 or 0 from tx  
 
 Once done, click Ok. And press Update.
 
 Eensure your MN appears, click Update if it does not appear. Now cointinue to the next section of this guide.
 
-## To Install the Digital Money Bits Masternode on VPS Server
+## To Install the StrongHands-Masternode on VPS Server
 
 Go through setting up the wallet and MN infomration on your computer. Then once that is ready to go, continue on to this guide. 
 
@@ -72,7 +72,7 @@ You will need to copy and paste your masternode private key into putty when it a
 
 If it says, Masternode Successfully Started then congrats you are done!
 
-NOTE: If you have troublestarting your masternode in the wallet itself (not on the VPS) run this command in the debug console.
+NOTE: If you have trouble starting your masternode in the wallet itself (not on the VPS) run this command in the debug console.
 
 `masternode start-missing (passphrase)`
 
