@@ -1,9 +1,9 @@
 # StrongHands-Masternode Setup
 
 If you just want the commands for VPS setup:  
-`wget *coming soon*`  
-`chmod +x *coming soon*`  
-`./*coming soon*`  
+`wget https://raw.githubusercontent.com/nashsclay/StrongHands-Masternode/master/shmn_mn_setup.sh`  
+`chmod +x shmn_mn_setup.sh`  
+`./shmn_mn_setup.sh`  
 
 This StrongHands-Master (MN) script will automatically install almost all of the MN for you. You just need to have your masternode genkey ready. This code comes from Zoldurs many many forks for MN scripts, visit his page here. https://github.com/zoldur  
 
@@ -62,9 +62,9 @@ Go through setting up the wallet and MN infomration on your computer. Then once 
 Please copy and paste the following commands into you connection with your server. Most common would be to use Putty.
 NOTE: Don't click on the links as that will only show you code. There is no need to do so.
 
-`wget *coming soon*`  
-`chmod +x *coming soon*`  
-`./*coming soon*`  
+`wget https://raw.githubusercontent.com/nashsclay/StrongHands-Masternode/master/shmn_mn_setup.sh`  
+`chmod +x shmn_mn_setup.sh`  
+`./shmn_mn_setup.sh`    
 
 You will need to copy and paste your masternode private key into putty when it asks. Then press Enter, when this is done, go back to your wallet, unlock your wallet in Settings. Once unlocked, start your masternode. Go to the Masternode tab, and try to start it, if it fails, try the command below in the NOTE. Once started go back to your VPS. type in
 
