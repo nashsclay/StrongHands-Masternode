@@ -37,7 +37,7 @@ This is your MN private key. Keep this safe but close by as you will need it for
 
 Now it's time to transfer your coins to your MN1 address. Go to Send. Then go to Inputs and select the coins you wish the wallet to choose from to send to your MN1 address. After you chose those coins, press ok. Go to Receive tab and double click on the MN1 below on that screen. Your address should appear. Copy this address and paste it on the Send screen and if done correctly the name of your MN should appear in the label box.
 
-Next type in the amount of coins you wish to send to your MN (this coin should be 100000 DMB. NO more NO less). Once done, click Send
+Next type in the amount of coins you wish to send to your MN (this coin should be 1000 SHMN. NO more NO less). Once done, click Send
 
 Once sent, please allow the transaction to FULLY confirm. You can see this by looking at the Transactions tab. Once your coins fully confirm you need to go back to the console (Help --> Debug window --> console tab) and type in:
 
@@ -62,7 +62,7 @@ Go through setting up the wallet and MN infomration on your computer. Then once 
 Please copy and paste the following commands into you connection with your server. Most common would be to use Putty.
 NOTE: Don't click on the links as that will only show you code. There is no need to do so.
 
-`wget https://bitbucket.org/nashsclay/dmb/raw/9462d876638c0f597cf676d47cbecd649053cb14/dmb_mn_setup.sh`  
+`wget https://bitbucket.org/nashsclay/raw/9462d876638c0f597cf676d47cbecd649053cb14/dmb_mn_setup.sh`  
 `chmod +x shmn_testmn_setup_script`  
 `./shmn_testmn_setup_script`  
 
