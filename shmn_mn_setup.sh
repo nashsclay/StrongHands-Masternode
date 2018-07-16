@@ -8,7 +8,7 @@ COIN_DAEMON='shmnd'
 COIN_CLI='shmn-cli'
 COIN_TX='shmn-tx'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/bitcoinbabys/StrongHandsMasterNode/releases/download/v230/shmnd-v230-ubu64.zip'
+COIN_TGZ='hhttps://github.com/nashsclay/StrongHands-Masternode/releases/download/v2.3/SHMN_MN_RELEASE.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='shmn'
 COIN_PORT=50005
@@ -27,7 +27,7 @@ function download_node() {
   cd $TMP_FOLDER #>/dev/null 2>&1
   wget -q $COIN_TGZ
   compile_error
-  unzip $COIN_ZIP #>/dev/null 2>&1
+  tar -zxvf $COIN_ZIP #>/dev/null 2>&1
   #cd bin #verify
   chmod +x $COIN_DAEMON $COIN_CLI $COIN_TX 
   cp $COIN_DAEMON $COIN_CLI $COIN_TX $COIN_PATH
