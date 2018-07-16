@@ -47,11 +47,9 @@ This will output your output of the transaction. If you do not see anything, the
 
 You need to copy the long hash and also the 1 or 0 at the end. Place these in the same file as your private key to find easily later. Now that is all done, we need to add the masternode to the masternode.conf file.
 
-Next go to the Masternodes tab. Click the Create button. In the dialogue box type in your MN information.  
-1. Alias = Your MN name (I would do the name you gave your MN deposit address)  
-2. Output Index = 1 or 0 from tx  
+Now we need to update your masternode.conf file. Go to Tools --> Open Masternode Configuration File. When this loads it will be your masternode.conf file in a basic text editor (or your deafault editor.) If you get a message saying it does not know what program to use to edit this file, choose Notepad. Now edit the MN file in the exact same format as the example above except add no pound (#) symbol in front. That is used to comment the line, basically allowing the wallet not to use that line. Then add your own information to that file. Once done, go to file --> Save. Then restart the wallet.
 
-Once done, click Ok. And press Update.
+Once reopen the wallet, go to the Masternode tab and press Update.
 
 Eensure your MN appears, click Update if it does not appear. Now cointinue to the next section of this guide.
 
