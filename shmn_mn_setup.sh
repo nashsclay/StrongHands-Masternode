@@ -8,7 +8,7 @@ COIN_DAEMON='shmnd'
 COIN_CLI='shmn-cli'
 COIN_TX='shmn-tx'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/nashsclay/StrongHands-Masternode/releases/download/v2.3/SHMN_MN_RELEASE.tar.gz'
+COIN_TGZ='https://github.com/bitcoinbabys/StrongHandsMasterNode/releases/download/v230/shmnd-v230-ubu64.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='shmn'
 COIN_PORT=50005
@@ -24,15 +24,15 @@ NC='\033[0m'
 
 function download_node() {
   echo -e "Prepare to download ${GREEN}$COIN_NAME${NC}."
-  cd $TMP_FOLDER #>/dev/null 2>&1
+  cd $TMP_FOLDER >/dev/null 2>&1
   wget -q $COIN_TGZ
   compile_error
-  tar -zxvf $COIN_ZIP #>/dev/null 2>&1
+  unzip $COIN_ZIP >/dev/null 2>&1
   #cd bin #verify
   chmod +x $COIN_DAEMON $COIN_CLI $COIN_TX 
   cp $COIN_DAEMON $COIN_CLI $COIN_TX $COIN_PATH
-  cd ~ #>/dev/null
-  rm -rf $TMP_FOLDER #>/dev/null 2>&1
+  cd ~ >/dev/null
+  rm -rf $TMP_FOLDER >/dev/null 2>&1
   clear
 }
 
@@ -75,7 +75,7 @@ EOF
 
 
 function create_config() {
-  mkdir $CONFIGFOLDER #>/dev/null 2>&1
+  mkdir $CONFIGFOLDER >/dev/null 2>&1
   RPCUSER=$(tr -cd '[:alnum:]' < /dev/urandom | fold -w10 | head -n1)
   RPCPASSWORD=$(tr -cd '[:alnum:]' < /dev/urandom | fold -w22 | head -n1)
   cat << EOF > $CONFIGFOLDER/$CONFIG_FILE
@@ -113,7 +113,7 @@ clear
 }
 
 function update_config() {
-  sed -i 's/daemon=1/daemon=0/' $CONFIGFOLDER/$CONFIG_FILE
+  #sed -i 's/daemon=1/daemon=0/' $CONFIGFOLDER/$CONFIG_FILE
   cat << EOF >> $CONFIGFOLDER/$CONFIG_FILE
 logintimestamps=1
 maxconnections=256
@@ -188,20 +188,20 @@ fi
 
 function prepare_system() {
 echo -e "Prepare the system to install ${GREEN}$COIN_NAME${NC} master node."
-apt-get update #>/dev/null 2>&1
+apt-get update >/dev/null 2>&1
 DEBIAN_FRONTEND=noninteractive apt-get update > /dev/null 2>&1
-DEBIAN_FRONTEND=noninteractive apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y -qq upgrade #>/dev/null 2>&1 
-apt install -y software-properties-common #>/dev/null 2>&1 
+DEBIAN_FRONTEND=noninteractive apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y -qq upgrade >/dev/null 2>&1 
+apt install -y software-properties-common >/dev/null 2>&1 
 echo -e "${GREEN}Adding bitcoin PPA repository"
-apt-add-repository -y ppa:bitcoin/bitcoin #>/dev/null 2>&1
+apt-add-repository -y ppa:bitcoin/bitcoin >/dev/null 2>&1
 echo -e "Installing required packages, it may take some time to finish.${NC}"
-apt-get update #>/dev/null 2>&1
+apt-get update >/dev/null 2>&1
 apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" make software-properties-common \
 build-essential libtool unzip autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils libboost-all-dev \
 libdb4.8 libdb4.8++ libboost-system1.58.0 libboost-filesystem1.58.0 \
 libboost-program-options1.58.0 libboost-thread1.58.0 libssl1.0.0 libminiupnpc10 libevent-2.0-5 \
-libevent-pthreads-2.0-5 libevent-core-2.0-5 libminiupnpc-dev libzmq3-dev git nano tmux curl wget pwgen libzmq3-dev libboost-all-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev #>/dev/null 2>&1
-apt-get install -y libgmp3-dev #>/dev/null 2>&1
+libevent-pthreads-2.0-5 libevent-core-2.0-5 libminiupnpc-dev libzmq3-dev git nano tmux curl wget pwgen libzmq3-dev libboost-all-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev >/dev/null 2>&1
+apt-get install -y libgmp3-dev >/dev/null 2>&1
 read -p 'stop'
 if [ "$?" -gt "0" ];
   then
