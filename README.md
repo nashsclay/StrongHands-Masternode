@@ -19,7 +19,7 @@ Do note that this script does enable the MN to restart if it is somehow closed. 
 
 ## Setup Wallet on Local Computer
 
-Download the newest wallet for your computer here: *coming soon*
+Download the newest wallet for your computer here: https://www.stronghands.info/masternodes/
 
 Once downloaded run the wallet and allow it to fully sync (nodes are hardcoded in the wallet)
 Once fully synced, encrypt your wallet. You can do this by selecting Settings --> Encrypt Wallet. Follow the prompts, also keeping your passphrase safe! This will allow you to send coins and make changes. Do NOT loose this passphrase. Once the wallet closes, give it a few minutes to finish encrypting (nothing will show) and restart the wallet.
