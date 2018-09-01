@@ -30,7 +30,7 @@ Now that your wallet is encrypted, and synced, it's time to send your coins to y
 
 Once the coins have arrived in your wallet, create a new MN address by going to Receive. Type in a label, MN1, then press Request payment. You will now have your new address for your MN.
 
-Next go to Settings --> Options --> Display tab --> check Display Coin Control features. This will allow you to easily send coins to your MN and choose ones incase you have other coins staking. Once done, restart the wallet.
+Next go to Settings --> Options --> Wallet tab --> check Display Coin Control features. This will allow you to easily send coins to your MN and choose ones incase you have other coins staking. Once done, restart the wallet.
 
 Now create your MN private key. This is very important! NEVER, NEVER, did I say NEVER? show this to anyone. Never. Period. Go to Help --> Debug window --> console tab, and type in:  
 `masternode genkey`
