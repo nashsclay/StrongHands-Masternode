@@ -65,6 +65,13 @@ https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 Pick from the top two file choices. Newer systems use 64 bit.
 
+When you have your Putty installed on the comptuer, open the Putty program. In the Host Name, type in your IP address to the server you purchased on Vultr or comparable service.
+
+When you first connect to your server, you may get a pop up. Click Yes to allow your computer to connect. Then you need to enter your user name and password.
+
+Username is: root
+Password will be asked next. Go to your vultr page and copy the password, easiest way is to click on the page icon next to the password. When you do this, regular click on the putty screen to make it active, then right click on the putty screen to paste your password. In Linux, passwords don't appear but if you just right-click once, your password will paste. Then press Enter to log in.
+
 Please copy and paste the following commands into you connection with your server. Most common would be to use Putty.
 NOTE: Don't click on the links as that will only show you code. There is no need to do so.
 
