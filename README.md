@@ -57,7 +57,10 @@ Eensure your MN appears, click Update if it does not appear. Now cointinue to th
 
 ## To Install the StrongHands-Masternode on VPS Server
 
-Go through setting up the wallet and MN infomration on your computer. Then once that is ready to go, continue on to this guide. 
+Go through setting up the wallet and MN information on your computer. Then once that is ready to go, continue on to this guide. 
+
+You will need a way to remote/ssh into your VPS server. I recommend using Putty. Putty can be downloaded for your system here. https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+Pick from the top two file choices. Newer systems use 64 bit.
 
 Please copy and paste the following commands into you connection with your server. Most common would be to use Putty.
 NOTE: Don't click on the links as that will only show you code. There is no need to do so.
