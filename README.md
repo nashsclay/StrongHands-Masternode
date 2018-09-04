@@ -59,7 +59,8 @@ Eensure your MN appears, click Update if it does not appear. Now cointinue to th
 
 Go through setting up the wallet and MN information on your computer. Then once that is ready to go, continue on to this guide. 
 
-You will need a way to remote/ssh into your VPS server. I recommend using Putty. Putty can be downloaded for your system here. https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+You will need a way to remote/ssh into your VPS server. I recommend using Putty. Putty can be downloaded for your system here:
+https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 Pick from the top two file choices. Newer systems use 64 bit.
 
