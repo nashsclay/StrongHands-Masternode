@@ -65,7 +65,22 @@ https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 Pick from the top two file choices. Newer systems use 64 bit.
 
-When you have your Putty installed on the comptuer, open the Putty program. In the Host Name, type in your IP address to the server you purchased on Vultr or comparable service.
+## Purchase Your VPS Server
+
+I recommend using vultr. You can use my referal link if you wish. https://www.vultr.com/?ref=7415368
+Make an account with them. Once that is complete, you need to purchase a server. Use these steps to purchase a server.
+1) Click the blue circle button "Deploy New Server"
+2) Choose the closest location.
+3) Server Type - Make sure on 64 bit tab, then choose Ubuntu 16.04 x64.
+4) Choose the $3.50 or $5 option. More you pay faster it will be.
+NOTE: This setup DOES NOT support more than one masternode of the SAME coin on the same VPS. Not yet. But if you have other coins you need for a Masternode of a different coin, I would recommend $5 option. I would personally put no more than 3 or 4 Masternodes of different coins on the $3.50 server.
+5) Choose Enable IPV6 in the Additional Features.
+6) At the bottom, add Enter Server Label if you desire. Name it what you want as this will be easier to know which server is what when you buy more servers when you other coins to invest in or want a 2nd, 3rd, etc masternode of the same coin.
+7) Click Deploy Server.
+
+The initial setup takes only a few minutes, once it's complete, click on the server name and it will bring up your server information.
+
+Now you have your server and Putty installed on the comptuer, open the Putty program. In the Host Name, type in your IP address to the server you purchased on Vultr or comparable service.
 
 When you first connect to your server, you may get a pop up. Click Yes to allow your computer to connect. Then you need to enter your user name and password.
 
