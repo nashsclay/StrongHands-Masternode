@@ -8,18 +8,17 @@ echo
 cd /usr/local/bin/
 sudo apt-get install unzip
 echo "Script may appear frozen for a few seconds. This is normal."
-wget -c https://github.com/sub307/XBI-bootstrap/releases/download/417018/bootstrap417018.rar
-sudo unrar x bootstrap417018.rar fix/
-cd fix
+wget -c https://github.com/bitcoinbabys/StrongHandsMasterNode/releases/download/v2400/ubu64-shmnd-v2400.zip
+sudo rm shmnd shmn-cli shmn-tx
+sudo unzip ubu64-shmnd-v2400.zip update/
+cd update
 sudo rm -R ~/.shmn/backups/
 sudo rm -R ~/.shmn/blocks/
 sudo rm -R ~/.shmn/chainstate/
 sudo rm -R ~/.shmn/database/
-sudo rm -R ~/.shmn/sporks/
-sudo rm -R ~/.shmn/zerocoin/
-sudo rm ~/.shmn/budget.dat ~/.shmn/db.log ~/.shmn/debug.log ~/.shmn/fee_estimates.dat ~/.shmn/mncache.dat ~/.shmn/mnpayments.dat ~/.shmn/peers.dat ~/.shmn/xbid.dat ~/.shmn/.lock
-sudo rm ../bootstrap417018.rar
-sudo mv chainstate blocks peers.dat ~/.XBI
+sudo rm ~/.shmn/db.log ~/.shmn/debug.log ~/.shmn/fee_estimates.dat ~/.shmn/mncache.dat ~/.shmn/mnpayments.dat ~/.shmn/shmnd.dat ~/.shmn/.lock
+sudo rm ../ubu64-shmnd-v2400.zip
+sudo mv shmn shmn-cli shmn-tx /usr/local/bin
 cd /usr/local/bin/
 systemctl start shmn.service
 cd ~
