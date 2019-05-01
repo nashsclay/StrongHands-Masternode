@@ -10,7 +10,7 @@ sudo apt-get install unzip
 echo "Script may appear frozen for a few seconds. This is normal."
 wget -c https://github.com/bitcoinbabys/StrongHandsMasterNode/releases/download/v2400/ubu64-shmnd-v2400.zip
 sudo rm shmnd shmn-cli shmn-tx
-sudo unzip ubu64-shmnd-v2400.zip update/
+sudo unzip ubu64-shmnd-v2400.zip -d update
 cd update
 sudo rm -R ~/.shmn/backups/
 sudo rm -R ~/.shmn/blocks/
