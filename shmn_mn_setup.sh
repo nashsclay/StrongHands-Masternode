@@ -87,6 +87,22 @@ listen=1
 server=1
 daemon=1
 port=$COIN_PORT
+addnode=95.179.140.91
+addnode=51.77.201.108
+addnode=68.183.166.77
+addnode=207.180.224.247
+addnode=104.156.255.14
+addnode=199.247.15.128
+addnode=118.27.37.7
+addnode=51.68.47.227
+addnode=85.25.140.34
+addnode=164.132.193.201
+addnode=94.130.181.56
+addnode=45.32.19.90
+addnode=133.18.200.227
+addnode=80.211.163.177
+addnode=45.77.20.21
+addnode=149.28.31.247
 EOF
 }
 
