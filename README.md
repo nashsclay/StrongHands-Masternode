@@ -1,10 +1,19 @@
 # StrongHands-Masternode Setup
 
-If you just want the commands for VPS setup:
+If you want the commands just to UPDATE your CURRENT MN:
+
 ```
-wget https://raw.githubusercontent.com/nashsclay/StrongHands-Masternode/master/shmn_mn_setup.sh  
+wget https://raw.githubusercontent.com/nashsclay/StrongHands-Masternode/master/shmn_update_v24.sh
+chmod +x shmn_update_v24.sh  
+./shmn_update_v24.sh 
+```
+
+If you just want the commands for a NEW VPS setup:
+
+```
+wget https://raw.githubusercontent.com/nashsclay/StrongHands-Masternode/master/shmn_mn_setup.sh 
 chmod +x shmn_mn_setup.sh  
-./shmn_mn_setup.sh  
+./shmn_mn_setup.sh 
 ```
 
 This StrongHands-Master (MN) script will automatically install almost all of the MN for you. You just need to have your masternode genkey ready. This code comes from Zoldurs many many forks for MN scripts, visit his page here. https://github.com/zoldur  
