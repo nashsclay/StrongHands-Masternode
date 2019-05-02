@@ -18,7 +18,7 @@ sudo rm -R ~/.shmn/chainstate/
 sudo rm -R ~/.shmn/database/
 sudo rm ~/.shmn/db.log ~/.shmn/debug.log ~/.shmn/fee_estimates.dat ~/.shmn/mncache.dat ~/.shmn/mnpayments.dat ~/.shmn/shmnd.dat ~/.shmn/.lock
 sudo rm ../ubu64-shmnd-v2400.zip
-sudo mv shmn shmn-cli shmn-tx /usr/local/bin
+sudo mv shmnd shmn-cli shmn-tx /usr/local/bin
 cd /usr/local/bin/
 systemctl start shmn.service
 cd ~
